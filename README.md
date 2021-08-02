@@ -8,4 +8,4 @@ Language Modeling Approach to Information Retrieval
 - [Guinzburg Nathanael](https://github.com/TheGuinz)
 - [Darhi Liron](https://github.com/drliron)
 - [Avraham Chen](https://github.com/TheGuinz)
-- [Maor Bachar](https://github.com/TheGuinz)
+- [Maor Bachar](https://github.com/maorb91)
