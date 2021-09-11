@@ -1,0 +1,12 @@
+TREC (disks 4–5): http://konect.cc/networks/gottron-trec/
+Document and Topic Sets for TRECs: https://trec.nist.gov/data/intro_eng.html
+https://github.com/diazf/trec-data
+https://trec.nist.gov/data/topics_eng/index.html
+
+####
+New Article GIT: https://github.com/ucasir/NPRF
+
+
+####
+Another usefull links:
+https://nlp.stanford.edu/IR-book/html/htmledition/ponte-and-crofts-experiments-1.html
