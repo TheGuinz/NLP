@@ -1,0 +1,12 @@
+### 2'nd Article
+Information Retrieval System By Using Vector Space Model :http://www.ijstr.org/final-print/oct2019/Information-Retrieval-System-By-Using-Vector-Space-Model.pdf
+
+### Code
+Simple LMIR: https://github.com/liheyuan/SimpleLMIR
+Word2Vec: https://www.analyticsvidhya.com/blog/2020/08/information-retrieval-using-word2vec-based-vector-space-model/
+
+### Data
+Document and Topic Sets for TRECs: https://trec.nist.gov/data/intro_eng.html
+TREC (disks 4–5): http://konect.cc/networks/gottron-trec/
+Ad hoc and small web topics: https://trec.nist.gov/data/topics_eng/index.html (Direct link: https://trec.nist.gov/data/topics_eng/topics.401-450.gz)
+https://www.kaggle.com/dmaso01dsta/cisi-a-dataset-for-information-retrieval
