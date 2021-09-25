@@ -3,7 +3,6 @@ from operator import itemgetter
 import math
 import urllib.request, urllib.parse, urllib.error
 from tqdm import tqdm
-import pandas as pd
 import sys
 sys.path.insert(0, './Data')
 from data_parser import parse_queries, parse_documents
@@ -68,19 +67,6 @@ class Collection:
        	    self.words[word] +=	1
 	# Add doc len
        	self.len += len(words)
-
-    def	GetCollTf(self, word, fuzzy = False):
-        if not fuzzy:
-            return self.words.get(word, 0)
-        else:
-            tf = 0
-            for (key, cnt) in list(self.words.items()):
-                if word in key:
-                    tf += cnt
-            return tf
-
-    def	GetCollLen(self):
-       	return self.len
 
 class LMIR:
     def __init__(self):
