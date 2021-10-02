@@ -35,6 +35,7 @@ def parse_queries(path="./Data/CISI.QRY"):
     return(queries)
 
 def parse_documents(path="./Data/CISI.ALL"):
+
     """
         Description: Function to parse 'CISI.ALL' file into a dictionary with the following format:
         {
@@ -63,3 +64,31 @@ def parse_documents(path="./Data/CISI.ALL"):
         documents[d_id] = {"title": d_tit, "body": d_txt}
 
     return documents
+
+def parse_data_ground_truth(path="./Data/CISI.REL"):
+    """
+        Description: Function to parse 'CISI.REL' file into a dictionary with the following format:
+        {
+            'QUERY_ID_0': [<DOCUMENT_ID>, <DOCUMENT_ID>, <DOCUMENT_ID>, ...],
+            'QUERY_ID_1': [<DOCUMENT_ID>, <DOCUMENT_ID>, <DOCUMENT_ID>, ...],
+            ...
+        }
+        return: dictionary
+    """
+
+    # initialize a dictionary variables for a query-to-document relationship
+    rel = {}
+
+    # Read relationship file and for each query ID store all related document
+    for row in open(path).read().splitlines():
+        q_id, d_id, _, _ = row.split()
+
+        if q_id not in rel.keys():
+            rel[q_id] = []
+
+        rel[q_id].append(d_id)
+
+    return rel
+
+
+    # return rel
